@@ -1,0 +1,329 @@
+main {
+  background-color: #fbfcf8;
+}
+
+.container {
+  width: 1226px;
+  margin: 0 auto;
+  padding: 24px;
+  background-color: #fbfcf8;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.addRecipeTitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 110%;
+  letter-spacing: 0;
+  vertical-align: middle;
+  color: #000;
+  padding-top: 48px;
+}
+
+.recipeTitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 180px;
+  line-height: 100%;
+  letter-spacing: 0;
+  vertical-align: middle;
+}
+.form {
+  display: flex;
+  gap: 40px;
+  width: 100%;
+}
+.left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.heading {
+  font-size: 32px;
+  font-weight: 700;
+  color: #2a2c2e;
+  margin: 0;
+}
+
+.generalInformation {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 110%;
+  letter-spacing: 0;
+  vertical-align: middle;
+  color: #000;
+  margin-top: 40px;
+}
+
+.recipeTitleLabel {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 0;
+  vertical-align: middle;
+  margin-top: 32px;
+}
+
+.cookingTimeWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 785px;
+}
+
+.caloriesCategoryRow {
+  display: flex;
+  gap: 24px;
+  justify-content: flex-start;
+}
+
+.newIngredientInputs {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+  align-items: flex-start;
+}
+
+.newIngredientInputs > input:first-child {
+  flex: 2;
+}
+
+.amountAndButton {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.amountAndButton input {
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.addIngredientBtn {
+  padding: 8px 16px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.input,
+.select {
+  width: 100%;
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-size: 16px;
+  font-weight: 400;
+  color: #3a3a3a;
+}
+
+.input,
+.textarea,
+.select {
+  width: 100%;
+  height: 46px;
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.inlineFieldsContainer {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.inlineField {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ingredientsLabel {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0;
+  vertical-align: middle;
+  color: black;
+  padding: 4px 8px; /* опціонально, для відступів */
+  display: inline-block;
+}
+.ingredients {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.addIngredientBtn {
+  width: 258px;
+  height: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-1, 8px);
+  border-radius: var(--radius-i-sm, 6px);
+  padding: 4px 8px;
+  background: var(--Light-brown, #9b6c43);
+  color: white;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.addIngredientBtn:hover {
+  background: #7e5330;
+}
+
+.addIngredientBtn:active {
+  background: #664220;
+}
+
+.publishRecipeBtn {
+  width: 809px;
+  height: 44px;
+  padding: 12px 16px;
+  background: var(--Light-brown, #9b6c43);
+  color: white;
+  border: none;
+  border-radius: var(--radius-i-sm, 6px);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: calc(var(--gap, 8px) / 3);
+  transition: background-color 0.3s ease;
+  margin-top: 72px;
+}
+
+.publishRecipeBtn:hover:not(:disabled) {
+  background-color: #7e5330;
+}
+
+.publishRecipeBtn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.instructionsLabel {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0;
+  vertical-align: middle;
+  color: black;
+  padding: 4px 8px;
+  display: inline-block;
+}
+
+.instructionsTextarea {
+  width: 809px;
+  height: 144px;
+  padding: 8px 12px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  border: 1px solid #ccc; /* Default state */
+  border-radius: 6px; /* Interactive border radius */
+  box-sizing: border-box;
+  resize: vertical;
+  gap: 8px; /* gap/2 приблизно 8px */
+  background-color: #fff; /* Default background */
+  color: #000; /* Default text color */
+}
+
+.uploadContainer {
+  width: 330px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.photoLabel {
+  font-size: 32px;
+  font-weight: 600;
+  color: #3a3a3a;
+  cursor: pointer;
+  padding-top: 141px;
+}
+
+.photoBox {
+  position: relative;
+  width: 330px;
+  height: 300px;
+  border: 2px #9f9f9f;
+  border-radius: 12px;
+  background-color: #9f9f9f;
+  cursor: pointer;
+  overflow: hidden;
+  margin-top: 14px;
+}
+
+.photoPlaceholder {
+  position: absolute;
+  top: 260px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+  color: #999;
+  user-select: none;
+}
+
+.previewImage {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.hiddenInput {
+  display: none;
+}
